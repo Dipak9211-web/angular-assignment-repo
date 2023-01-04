@@ -1,0 +1,52 @@
+<div class="title">
+    <div class="title-page">
+        <h2>Table Data</h2>
+        <p>after refreshing page added data will removed, because we are using fake api</p>
+    </div>
+</div> 
+
+<div class="collapse-button" (click)="collapseForm()">
+    <button class="button button1">{{textButton}}</button>
+</div>
+<div class="collapse-container" *ngIf="!collapse">
+<div class="container">
+    <form [formGroup]="registerForm" (ngSubmit)="postData()">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Title</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="title" formControlName="title" placeholder="title">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Body</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="body" formControlName="body" placeholder="body">
+      </div>
+    </div>
+    <div class="row">
+       <button class="button button2">Submit</button>
+    </div>
+    </form>
+  </div>
+</div>
+<hr>
+<div class="tabledisplay">
+    <table>
+        <tr>
+            <th>title</th>
+            <th>body</th>
+        </tr>
+        <tr *ngFor="let item of getResData">
+            <td>{{item.title}}</td>
+            <td>{{item.body}}</td>
+        </tr>
+    </table>
+</div>
+
+<!--  -->
+
+  

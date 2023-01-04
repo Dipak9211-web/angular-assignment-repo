@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    list-style-type: none;
+}
+table, td, th {
+    border: 1px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  td {
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(129, 189, 129);
+  }
+.active{
+  color: green;
+  border-bottom: 1px solid green;
+}

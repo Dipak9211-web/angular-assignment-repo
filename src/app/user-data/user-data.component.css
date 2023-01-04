@@ -1,0 +1,14 @@
+.heading{
+    margin-top: 20px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: green;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.tabular{
+    width: 90%;
+}
